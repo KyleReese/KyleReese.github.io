@@ -7,6 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kyle Reese</title>
   </head>
+  <script>
+    (function () {
+      const redirect = localStorage.getItem("path");
+      if (redirect) {
+        localStorage.removeItem("path");
+        window.history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.ts"></script>
