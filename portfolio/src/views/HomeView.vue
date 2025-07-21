@@ -1,5 +1,7 @@
 <template>
-  <div class="min-h-screen pt-20">
+  <div
+    class="min-h-screen pt-20 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
+  >
     <div class="container mx-auto px-6">
       <div
         class="flex flex-col items-center justify-center min-h-[80vh] text-center"
